@@ -68,6 +68,7 @@ STUDENTS = {
     "004": "Abdul Rehman Chohan",
     "002": "Hanan Malik",
     "016": "Atika Meharban",
+    "006": "Ahmad Afzal",
     "025": "Iqra",
     "051": "Usama Nasir",
     "036": "Saoud",
