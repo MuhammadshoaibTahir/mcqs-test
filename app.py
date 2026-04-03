@@ -28,7 +28,11 @@ TAB_SWITCH_WARNING_SECONDS = 5
 
 # ================== STUDENT DATABASE ==================
 STUDENTS = {
-
+    "043": "Roshan Ahmad",
+    "035": "Muhammad Ibrahim",
+    "048": "Zaryab Haider",
+    "003": "Abdur Rehman Azam",
+    "039": "Awais Zahoor",
 }
 
 # ================== QUESTION BANK - 20 QUESTIONS TOTAL ==================
