@@ -28,155 +28,157 @@ TAB_SWITCH_WARNING_SECONDS = 5
 
 # ================== STUDENT DATABASE ==================
 STUDENTS = {
-    "043": "Roshan Ahmad",
-    "035": "Muhammad Ibrahim",
-    "048": "Zaryab Haider",
-    "003": "Abdur Rehman Azam",
-    "039": "Awais Zahoor",
+    "FA22-BEN-001": "FAIZ RASOOL",
+    "FA22-BEN-002": "EEMAN SALEEM",
+    "FA22-BEN-004": "EISAL FATIMA",
+    "FA22-BEN-005": "MUHAMMAD ARHAM FAISAL",
+    "FA22-BEN-006": "SITARA FATIMA",
+    "FA22-BEN-007": "LABIQA FATIMA",
+    "FA22-BEN-008": "BAKHTAWER RAO",
+    "FA22-BEN-009": "FATIMA SALABAT",
+    "FA22-BEN-011": "SHAKIRA IQBAL",
+    "FA22-BEN-012": "AYESHA SANA",
+    "FA22-BEN-015": "MUHAMMAD BILAL",
+    "FA22-BEN-017": "MUHAMMAD ABDULLAH",
+    "FA22-BEN-019": "ABDULLAH BIN ASIF",
+    "FA22-BEN-020": "MUHAMMAD ALI",
+    "FA22-BEN-021": "AYESHA IRSHAD",
+    "FA22-BEN-023": "MUHAMMAD AWAIS",
+    "FA22-BEN-024": "AREEBA",
+    "FA22-BEN-025": "AREEBA TARIQ",
+    "FA22-BEN-027": "JAVERIA RAO",
+    "FA22-BEN-028": "UMER BILAL",
+    "FA22-BEN-031": "KHADIJA PERVAIZ",
+    "FA22-BEN-032": "EMAN IJAZ",
+    "FA22-BEN-033": "MUQADAS SHAHZADI"
 }
 
 # ================== QUESTION BANK - 20 QUESTIONS TOTAL ==================
 
 # ========== SECTION 1: 10 MOST IMPORTANT MCQs (From PDFs) ==========
 MCQ_QUESTIONS = [
-    # Most Important Questions from Functional English PDFs
+    # ================= CL & NLP =================
     {
-        "question": "The key principle for making polite requests is:",
-        "options": ["Use fewer words", "The more words you use, the more polite it generally sounds", "Always use commands", "Avoid modal verbs"],
-        "correct": "The more words you use, the more polite it generally sounds",
+        "question": "Computational Linguistics is a field that combines:",
+        "options": ["Biology and Chemistry", "Linguistics and Computer Science", "Physics and Math", "History and AI"],
+        "correct": "Linguistics and Computer Science",
         "type": "mcq"
     },
     {
-        "question": "A request gives the listener:",
-        "options": ["No choice", "The option to decline", "A command", "An order"],
-        "correct": "The option to decline",
+        "question": "Natural Language Processing mainly focuses on:",
+        "options": ["Hardware design", "Human language understanding and generation", "Networking", "Database storage"],
+        "correct": "Human language understanding and generation",
         "type": "mcq"
     },
     {
-        "question": "Which is a proper noun?",
-        "options": ["city", "London", "book", "teacher"],
-        "correct": "London",
+        "question": "Tokenization means:",
+        "options": ["Removing stopwords", "Splitting text into units", "Assigning tags", "Parsing sentences"],
+        "correct": "Splitting text into units",
         "type": "mcq"
     },
     {
-        "question": "Which article is correct: '___ hour ago'?",
-        "options": ["a", "an", "the", "no article"],
-        "correct": "an",
+        "question": "Which NLP stage assigns grammatical categories?",
+        "options": ["Tokenization", "POS Tagging", "Parsing", "NER"],
+        "correct": "POS Tagging",
         "type": "mcq"
     },
     {
-        "question": "Which preposition indicates exact time: 'The class starts ___ 9 AM'?",
-        "options": ["in", "on", "at", "by"],
-        "correct": "at",
+        "question": "Which tag represents a noun?",
+        "options": ["VB", "JJ", "NN", "RB"],
+        "correct": "NN",
         "type": "mcq"
     },
     {
-        "question": "What is the past tense of 'go'?",
-        "options": ["goed", "went", "gone", "goes"],
-        "correct": "went",
+        "question": "The Viterbi algorithm is used to:",
+        "options": ["Tokenize text", "Find most probable tag sequence", "Remove noise", "Build vocabulary"],
+        "correct": "Find most probable tag sequence",
         "type": "mcq"
     },
     {
-        "question": "Which is CORRECT?",
-        "options": ["He don't like coffee", "He doesn't like coffee", "He doesn't likes coffee", "He not like coffee"],
-        "correct": "He doesn't like coffee",
+        "question": "A language model assigns:",
+        "options": ["Grammar rules", "Probabilities to sequences", "POS tags", "Syntax trees"],
+        "correct": "Probabilities to sequences",
         "type": "mcq"
     },
     {
-        "question": "'Affect' is usually a ___, while 'effect' is usually a ___.",
-        "options": ["noun, verb", "verb, noun", "adjective, adverb", "adverb, adjective"],
-        "correct": "verb, noun",
+        "question": "Bigram model considers:",
+        "options": ["No context", "One previous word", "Two previous words", "Whole sentence"],
+        "correct": "One previous word",
         "type": "mcq"
     },
     {
-        "question": "Which sentence uses SUBJUNCTIVE mood?",
-        "options": ["I am happy", "I wish I were taller", "She studies daily", "Close the door"],
-        "correct": "I wish I were taller",
+        "question": "The main problem in n-gram models is:",
+        "options": ["Parsing error", "Sparse data problem", "Tokenization issue", "Overfitting"],
+        "correct": "Sparse data problem",
         "type": "mcq"
     },
     {
-        "question": "An independent clause is:",
-        "options": ["Cannot stand alone", "Expresses a complete thought", "Needs another clause", "Has no verb"],
-        "correct": "Expresses a complete thought",
+        "question": "Information Extraction is used to:",
+        "options": ["Translate text", "Extract structured information", "Parse syntax", "Tokenize text"],
+        "correct": "Extract structured information",
         "type": "mcq"
-    }
-]
+    },
 
-# ========== SECTION 2: 2 COMPREHENSION PASSAGES (10 Questions Total) ==========
-COMPREHENSION_PASSAGES = [
+    # ================= PYTHON BASICS =================
     {
-        "passage_id": 1,
-        "title": "The Rise of Artificial Intelligence",
-        "passage": """Artificial intelligence (AI) has transformed numerous industries over the past decade. From healthcare to finance, AI systems are now capable of performing tasks that once required human expertise. Machine learning algorithms can analyze vast datasets to identify patterns that would take humans years to discover. In healthcare, AI-powered diagnostic tools have shown accuracy rates comparable to experienced physicians in detecting certain conditions. The financial sector uses AI for fraud detection, algorithmic trading, and customer service chatbots. However, the rapid advancement of AI has also raised significant ethical concerns. Questions about data privacy, job displacement, and algorithmic bias dominate public discourse. Critics argue that without proper regulation, AI could exacerbate existing social inequalities. Proponents counter that AI, when developed responsibly, has the potential to solve some of humanity's most pressing challenges, including climate change and disease prevention. The debate continues as governments worldwide work to establish frameworks for the ethical development and deployment of AI technology.""",
-        "questions": [
-            {
-                "question": "According to the passage, which TWO industries are mentioned as benefiting from AI?",
-                "options": ["Healthcare and Finance", "Education and Tourism", "Agriculture and Mining", "Entertainment and Sports"],
-                "correct": "Healthcare and Finance",
-                "type": "comprehension"
-            },
-            {
-                "question": "What concern do critics raise about AI?",
-                "options": ["It is too expensive", "It may worsen social inequalities", "It cannot process data", "It only works in healthcare"],
-                "correct": "It may worsen social inequalities",
-                "type": "comprehension"
-            },
-            {
-                "question": "The word 'exacerbate' in the passage is closest in meaning to:",
-                "options": ["Reduce", "Solve", "Worsen", "Maintain"],
-                "correct": "Worsen",
-                "type": "comprehension"
-            },
-            {
-                "question": "According to the passage, AI in healthcare:",
-                "options": ["Replaces all doctors", "Shows accuracy comparable to experienced physicians", "Is not effective", "Only works for minor conditions"],
-                "correct": "Shows accuracy comparable to experienced physicians",
-                "type": "comprehension"
-            },
-            {
-                "question": "Governments worldwide are:",
-                "options": ["Banning AI completely", "Working to establish frameworks for ethical AI development", "Ignoring AI development", "Only using AI in military"],
-                "correct": "Working to establish frameworks for ethical AI development",
-                "type": "comprehension"
-            }
-        ]
+        "question": "In Python, list indexing starts from:",
+        "options": ["1", "-1", "0", "Depends on list"],
+        "correct": "0",
+        "type": "mcq"
     },
     {
-        "passage_id": 2,
-        "title": "The Impact of Social Media on Communication",
-        "passage": """Social media platforms have fundamentally altered the way people communicate with each other. While traditional forms of communication such as letters and telephone calls required dedicated time and effort, social media enables instant messaging across the globe. This has brought undeniable benefits, including the ability to maintain relationships across distances and access information in real time. Nevertheless, research suggests that excessive social media use may negatively impact interpersonal skills. Studies have found that individuals who spend more than three hours daily on social media are more likely to report feelings of loneliness and social isolation. Furthermore, the prevalence of abbreviated language and emojis in online communication has raised concerns about declining writing proficiency among young people. Educators note that students increasingly struggle with formal writing conventions, often mixing casual digital language with academic prose. Despite these challenges, social media remains an integral part of modern life, and the key lies in finding a healthy balance between digital and face-to-face interactions.""",
-        "questions": [
-            {
-                "question": "What is the main idea of the passage?",
-                "options": ["Social media should be banned", "Social media has both benefits and drawbacks for communication", "Traditional communication is better", "Emojis improve writing skills"],
-                "correct": "Social media has both benefits and drawbacks for communication",
-                "type": "comprehension"
-            },
-            {
-                "question": "According to research mentioned in the passage, people spending more than three hours daily on social media:",
-                "options": ["Become better communicators", "Improve their writing", "Report feeling lonely", "Earn more money"],
-                "correct": "Report feeling lonely",
-                "type": "comprehension"
-            },
-            {
-                "question": "What do educators observe about students?",
-                "options": ["Students write better essays", "Students mix casual and academic language", "Students avoid social media", "Students prefer letters"],
-                "correct": "Students mix casual and academic language",
-                "type": "comprehension"
-            },
-            {
-                "question": "Traditional forms of communication mentioned include:",
-                "options": ["Only emails", "Letters and telephone calls", "Only text messages", "Only video calls"],
-                "correct": "Letters and telephone calls",
-                "type": "comprehension"
-            },
-            {
-                "question": "The passage suggests the solution is:",
-                "options": ["Stop using social media completely", "Use social media more", "Find a healthy balance between digital and face-to-face interactions", "Only use social media for work"],
-                "correct": "Find a healthy balance between digital and face-to-face interactions",
-                "type": "comprehension"
-            }
-        ]
+        "question": "What does list[::-1] do?",
+        "options": ["Sort list", "Reverse list", "Delete elements", "Copy list"],
+        "correct": "Reverse list",
+        "type": "mcq"
+    },
+    {
+        "question": "Negative indexing in Python means:",
+        "options": ["Error", "Counting from end", "Looping", "Skipping values"],
+        "correct": "Counting from end",
+        "type": "mcq"
+    },
+    {
+        "question": "In slicing list[1:4], which indices are included?",
+        "options": ["1,2,3", "1,2,3,4", "2,3,4", "Only 1"],
+        "correct": "1,2,3",
+        "type": "mcq"
+    },
+    {
+        "question": "What does list[::2] return?",
+        "options": ["All elements", "Every second element", "Reverse list", "First element only"],
+        "correct": "Every second element",
+        "type": "mcq"
+    },
+    {
+        "question": "Which operation replaces an element in a list?",
+        "options": ["append()", "remove()", "list[index] = value", "pop()"],
+        "correct": "list[index] = value",
+        "type": "mcq"
+    },
+    {
+        "question": "What does append() do?",
+        "options": ["Removes element", "Adds element at end", "Sorts list", "Replaces element"],
+        "correct": "Adds element at end",
+        "type": "mcq"
+    },
+    {
+        "question": "What does pop() do?",
+        "options": ["Adds element", "Removes last element", "Sorts list", "Duplicates list"],
+        "correct": "Removes last element",
+        "type": "mcq"
+    },
+    {
+        "question": "What will len([1,2,3,4]) return?",
+        "options": ["3", "4", "5", "Error"],
+        "correct": "4",
+        "type": "mcq"
+    },
+    {
+        "question": "Which data type is used to store ordered elements?",
+        "options": ["Set", "Dictionary", "List", "Tuple"],
+        "correct": "List",
+        "type": "mcq"
     }
 ]
 
@@ -351,7 +353,7 @@ def main():
         st.markdown("### Student Login")
         st.markdown("---")
         
-        roll_number = st.text_input("Enter Your Roll Number:", max_chars=3).strip()
+        roll_number = st.text_input("Enter Your Roll Number:").strip().upper()
         
         if st.button("Login", type="primary"):
             if roll_number not in STUDENTS:
