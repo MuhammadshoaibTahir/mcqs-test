@@ -41,56 +41,69 @@ STUDENTS = {
 
 # ================== MCQs ==================
 MCQ_QUESTIONS = [
-    {
-        "question": "Computational Linguistics is a field that combines:",
-        "options": ["Biology and Chemistry", "Linguistics and Computer Science", "Physics and Math", "History and AI"],
-        "correct": "Linguistics and Computer Science"
-    },
-    {
-        "question": "Tokenization means:",
-        "options": ["Removing stopwords", "Splitting text into units", "Assigning tags", "Parsing sentences"],
-        "correct": "Splitting text into units"
-    },
-    {
-        "question": "Which NLP stage assigns grammatical categories?",
-        "options": ["Tokenization", "POS Tagging", "Parsing", "NER"],
-        "correct": "POS Tagging"
-    },
-    {
-        "question": "Which tag represents a noun?",
-        "options": ["VB", "JJ", "NN", "RB"],
-        "correct": "NN"
-    },
-    {
-        "question": "Bigram model considers:",
-        "options": ["No context", "One previous word", "Two previous words", "Whole sentence"],
-        "correct": "One previous word"
-    },
-    {
-        "question": "The main problem in n-gram models is:",
-        "options": ["Parsing error", "Sparse data problem", "Tokenization issue", "Overfitting"],
-        "correct": "Sparse data problem"
-    },
-    {
-        "question": "In Python, list indexing starts from:",
-        "options": ["1", "-1", "0", "Depends on list"],
-        "correct": "0"
-    },
-    {
-        "question": "What does list[::-1] do?",
-        "options": ["Sort list", "Reverse list", "Delete elements", "Copy list"],
-        "correct": "Reverse list"
-    },
-    {
-        "question": "Negative indexing means:",
-        "options": ["Error", "Counting from end", "Looping", "Skipping values"],
-        "correct": "Counting from end"
-    },
-    {
-        "question": "What does append() do?",
-        "options": ["Removes element", "Adds element at end", "Sorts list", "Replaces element"],
-        "correct": "Adds element at end"
-    }
+
+# ===== CL & NLP =====
+{"question":"Computational Linguistics combines:","options":["Math & Physics","Linguistics & Computer Science","Biology & AI","History & CS"],"correct":"Linguistics & Computer Science"},
+{"question":"NLP is used for:","options":["Hardware design","Language processing","Circuit design","Networking"],"correct":"Language processing"},
+{"question":"Tokenization splits:","options":["Sentences","Characters","Text into units","Tags"],"correct":"Text into units"},
+{"question":"POS tagging assigns:","options":["Meaning","Grammar category","Syntax tree","Entities"],"correct":"Grammar category"},
+{"question":"NN tag represents:","options":["Verb","Noun","Adjective","Adverb"],"correct":"Noun"},
+{"question":"VB tag represents:","options":["Verb","Noun","Adjective","Determiner"],"correct":"Verb"},
+{"question":"NER identifies:","options":["Verbs","Names","Syntax","Stopwords"],"correct":"Names"},
+{"question":"Parsing determines:","options":["Meaning","Structure","Tokens","Tags"],"correct":"Structure"},
+{"question":"Bigram uses:","options":["No context","1 previous word","2 previous words","Full sentence"],"correct":"1 previous word"},
+{"question":"Trigram uses:","options":["1 word","2 words","3 words","No context"],"correct":"2 words"},
+{"question":"Language model assigns:","options":["Tags","Probabilities","Trees","Rules"],"correct":"Probabilities"},
+{"question":"Perplexity measures:","options":["Speed","Accuracy","Prediction quality","Size"],"correct":"Prediction quality"},
+{"question":"Sparse data problem occurs in:","options":["Regex","N-grams","Parsing","POS"],"correct":"N-grams"},
+{"question":"Add-k smoothing solves:","options":["Parsing","Zero probability","Tokenization","Tagging"],"correct":"Zero probability"},
+{"question":"Corpus means:","options":["Algorithm","Dataset of text","Model","Tree"],"correct":"Dataset of text"},
+{"question":"Token is:","options":["Unique word","Occurrence","Sentence","Tag"],"correct":"Occurrence"},
+{"question":"Type is:","options":["Unique word","Occurrence","Sentence","Tag"],"correct":"Unique word"},
+{"question":"TTR stands for:","options":["Type Token Ratio","Text Tag Ratio","Token Tree Ratio","Type Tag Rule"],"correct":"Type Token Ratio"},
+{"question":"Morphology studies:","options":["Syntax","Word structure","Meaning","Sound"],"correct":"Word structure"},
+{"question":"Morpheme is:","options":["Sentence","Word","Smallest unit","Phrase"],"correct":"Smallest unit"},
+
+# ===== MORPHOLOGY =====
+{"question":"Prefix example:","options":["-ing","un-","-ed","cat"],"correct":"un-"},
+{"question":"Suffix example:","options":["un-","-ness","pre-","anti-"],"correct":"-ness"},
+{"question":"Inflectional morphology:","options":["Changes meaning","Changes grammar","Creates new word","Deletes word"],"correct":"Changes grammar"},
+{"question":"Derivational morphology:","options":["Grammar change","Meaning change","No change","Token change"],"correct":"Meaning change"},
+{"question":"Lemmatization returns:","options":["Random form","Base form","Suffix","Prefix"],"correct":"Base form"},
+
+# ===== LANGUAGE MODELLING =====
+{"question":"MLE stands for:","options":["Max Likelihood Estimation","Mean Level Error","Model Logic Engine","Machine Learning Engine"],"correct":"Max Likelihood Estimation"},
+{"question":"Chain rule is used in:","options":["Parsing","Language models","Regex","Tagging"],"correct":"Language models"},
+{"question":"Log probabilities avoid:","options":["Overflow","Underflow","Errors","Loops"],"correct":"Underflow"},
+{"question":"Good-Turing is:","options":["Parser","Smoothing","Tagger","Tokenizer"],"correct":"Smoothing"},
+{"question":"Kneser-Ney is:","options":["Grammar","Smoothing","Parsing","Tokenization"],"correct":"Smoothing"},
+
+# ===== INFORMATION EXTRACTION =====
+{"question":"IE extracts:","options":["Grammar","Structured info","Syntax","Tokens"],"correct":"Structured info"},
+{"question":"Regex is used for:","options":["Parsing","Pattern matching","Translation","Tagging"],"correct":"Pattern matching"},
+{"question":"Email extraction uses:","options":["CFG","Regex","HMM","CRF"],"correct":"Regex"},
+{"question":"NER is part of:","options":["IE","Parsing","Tokenization","Slicing"],"correct":"IE"},
+
+# ===== PYTHON BASICS =====
+{"question":"List indexing starts at:","options":["1","0","-1","Depends"],"correct":"0"},
+{"question":"Negative index -1 means:","options":["First","Last","Middle","Error"],"correct":"Last"},
+{"question":"list[::-1] gives:","options":["Sorted","Reversed","Deleted","Copied"],"correct":"Reversed"},
+{"question":"list[1:4] includes:","options":["1,2,3","1,2,3,4","2,3,4","Only 1"],"correct":"1,2,3"},
+{"question":"list[::2] gives:","options":["All","Every 2nd element","Reverse","First only"],"correct":"Every 2nd element"},
+{"question":"append() does:","options":["Remove","Add end","Sort","Replace"],"correct":"Add end"},
+{"question":"pop() does:","options":["Add","Remove last","Sort","Copy"],"correct":"Remove last"},
+{"question":"len([1,2,3]) =","options":["2","3","4","Error"],"correct":"3"},
+{"question":"list[0] gives:","options":["Last","First","Middle","Error"],"correct":"First"},
+{"question":"replace element uses:","options":["append","pop","list[i]=x","remove"],"correct":"list[i]=x"},
+
+# ===== ADVANCED PYTHON =====
+{"question":"Which is mutable?","options":["Tuple","String","List","Integer"],"correct":"List"},
+{"question":"Which is immutable?","options":["List","Dict","Tuple","Set"],"correct":"Tuple"},
+{"question":"set removes:","options":["Order","Duplicates","Values","Keys"],"correct":"Duplicates"},
+{"question":"Dictionary stores:","options":["Values only","Keys only","Key-value pairs","Indexes"],"correct":"Key-value pairs"},
+{"question":"for loop is used for:","options":["Condition","Iteration","Function","Class"],"correct":"Iteration"},
+{"question":"if statement is used for:","options":["Loop","Condition","List","Function"],"correct":"Condition"}
+
 ]
 
 TOTAL_QUESTIONS = len(MCQ_QUESTIONS)
