@@ -14,7 +14,7 @@ RESULTS_XLSX = "results.xlsx"
 
 # ================== STUDENTS ==================
 STUDENTS = {
-    "FA22-BEN-001": "FAIZ RASOOL",
+    "001": "FAIZ RASOOL",
     "FA22-BEN-002": "EEMAN SALEEM",
     "FA22-BEN-004": "EISAL FATIMA",
     "FA22-BEN-005": "MUHAMMAD ARHAM FAISAL",
